@@ -1,0 +1,144 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/*Header*/
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+hr {
+border-color: #7d97ad;
+border-top-width: 3px;
+}
+
+/*Content*/
+.image {
+    width: 100%;
+    height: 30vmin;
+}
+.image-main {
+    width: 100%;
+}
+.image_contact {
+    width: 90px;
+    height: 100px;
+}
+mark {
+    background-color: #e6f2ff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.5em;
+}
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+}
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    color: #2d3c49;
+}
+h2 {
+    color: #7d97ad;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2d3c49;
+}
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: #2d3c49;
+}
+
+/*Footer*/
+.footer_hr {
+    border : 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.footer_h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2d3c49;
+}
+.col {
+    margin-bottom: 30px;
+}
+.icon {
+    font-size: 2em;
+}
+.link {
+    word-wrap: break-word;
+}
+
+/*Media Queries*/
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 25px;
+    }
+    .modal_text {
+        font-size: 18px;
+    }
+    .image {
+        height: 50vmin;
+    }
+    .image-main {
+        display: none;
+    }
+    .icon {
+        font-size: 1.2em;
+    }
+    .foot {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width:766px){
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 20px;
+    }
+    .image {
+        height: 60vmin;
+    }
+    .image-main {
+        display: none;
+    }
+    .icon {
+        font-size: 1.7em;
+    }
+    .foot {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+    .image {
+        height: 23vmin;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+

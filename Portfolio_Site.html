@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Renders the width of the page at the width of its own viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Portfolio Site">
+    <meta name="author" content="David Fernandez">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>David Portfolio Site</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- My personal style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-xs-6">
+              <object id="logo" type="image/svg+xml" data="./images/logo.svg">Udacity Logo</object>
+          </div>
+          <div class="col-xs-6 text-right">
+            <h1>David Fernandez</h1>
+            <h4>Full stack web-developer</h4>
+          </div>
+        </div>
+      </header>
+      <hr>
+      <div class="row main_img">
+        <div class="col-md-12 col">
+          <picture>
+            <source media="(max-width: 765px)" srcset="none">
+            <source media="(min-width:766px) and (max-width:992px)" srcset="./images/new-york-700_700px_md_.jpg">
+            <img class="image-main" src="./images/new-york-1200_1200px_lg_.jpg" alt="New York">
+          </picture>
+        </div>
+      </div>
+      <section id="content">
+        <div class="row">
+          <div class="col-xs-12 text-uppercase">
+            <h2>Python Featured Work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col">
+            <picture>
+              <source media="(max-width: 450px)" srcset="./images/movie-trailer-450_450px_sm_.jpg">
+              <source media="(min-width:451px) and (max-width:766px)" srcset="./images/movie-trailer-700_700px_md_.jpg">
+              <img class="image" src="./images/movie-trailer-450_450px_sm_.jpg" alt="Movie-Trailer">
+            </picture>
+            <h3>Movie trailer website</h3>
+            <p><mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+            <a class="link" href="https://github.com/david05488/Movie_trailer_Website">https://github.com/david05488/Movie_trailer_Website</a>
+          </div>
+          <div class="col-sm-4 col">
+            <picture>
+              <source media="(max-width: 450px)" srcset="./images/triangles-450_450px_sm_.jpg">
+              <source media="(min-width:451px) and (max-width:766px)" srcset="./images/triangles-700_700px_md_.jpg">
+              <img class="image" src="./images/triangles-450_450px_sm_.jpg" alt="triangles">
+            </picture>
+            <h3>Python triangle</h3>
+            <p><mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+            <a class="link" href="https://github.com/david05488/Triangle_python">https://github.com/david05488/Triangle_python</a>
+          </div>
+          <div class="col-sm-4 col">
+            <picture>
+              <source media="(max-width: 450px)" srcset="./images/flower-450_450px_sm_.jpg">
+              <source media="(min-width:451px) and (max-width:766px)" srcset="./images/flower-700_700px_md_.jpg">
+              <img class="image" src="./images/flower-450_450px_sm_.jpg" alt="flower">
+            </picture>
+            <h3>Python flower example</h3>
+            <p><mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+            <a class="link" href="https://github.com/david05488/Python_Flower">https://github.com/david05488/Python_Flower</a>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <footer class="row">
+          <div class="col-xs-6">
+
+            <p class="footer-links foot">
+              <a href="#top">Home</a>
+              ·
+              <a href="https://discussions.udacity.com/">Forum</a>
+              ·
+              <a data-toggle="modal" data-target="#myModalabout" href="#">About</a>
+              ·
+              <a data-toggle="modal" data-target="#myModalfaq" href="#">Faq</a>
+              ·
+              <a data-toggle="modal" data-target="#myModalcontact" href="#">Contact</a>
+            </p>
+
+            <p class="foot">David Fernandez © 2017</p>
+          </div>
+          <div class="col-xs-6 text-right icon">
+              <a href="https://www.facebook.com/" class="brandico-facebook-rect" style="color:darkblue"></a>
+              <a href="https://plus.google.com/" class="brandico-googleplus-rect" style="color:red"></a>
+              <a href="https://twitter.com/" class="brandico-twitter-bird" style="color:#0084b4"></a>
+              <a href="https://www.instagram.com/" class="brandico-instagram-filled" style="color:brown"></a>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModalabout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">About this page</h4>
+              </div>
+              <div class="modal-body">
+                <p>This page have been created using bootstrap framework and has the objetive to display responsiveness</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModalfaq" tabindex="-1" role="dialog" aria-labelledby="myModalLabelfaq">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabelfaq">FAQ</h4>
+                </div>
+                <div class="modal-body">
+                  <h1>Why Responsive?</h1>
+                  <h3>6 REASONS WHY RESPONSIVE DESIGN IS THE BEST SOLUTION FOR YOU</h3>
+                  <hr class="footer_hr">
+                  <p class="modal_text">We all know that having a mobile-friendly website is more important than ever. While Google's so-called Mobilegeddon may have been the catalyst some website owners needed to start thinking about that long-overdue redesign, trying to maintain your mobile search results is only a minor piece of the puzzle. Websites that are optimized for mobile devices tend to convert better and increase consumer loyalty. After all, it doesn't really matter if people are finding your website if they aren't using it.
+
+                  In the wake of Google's mobile-friendly update, there's renewed debate about the best way to optimize your website for mobile. There's plenty of strategies you can take here: separate mobile website, adaptive design, responsive design, or even a mobile app. With all these options, it may seem like a tough choice. However, for most websites, the best solution is responsive design. Here's why.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">GOOGLE SAYS IT'S BETTER</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">If your site is like most websites, Google brings you more traffic than any other source. Google now estimates that more than half of all searches are performed on mobile devices. If you aren't seeing it yet, you may soon see mobile organic search outperform desktop organic search. While Google doesn't explicitly favor one method of mobile optimization over another in the rankings, the search engine does recommend using responsive design. Doing what your biggest referrer tells you to do seems like a no-brainer.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">BETTER CROSS-DEVICE EXPERIENCE</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">Your customers aren't using just one device to access your website. In fact, over half of online consumers use multiple devices when shopping for a product. They might begin their research on a mobile device and then return to your site later to make a purchase or complete a contact form via their desktop. What if your desktop site doesn't match the look and feel of your mobile site? You might end up losing the sale. With responsive design, you ensure your customers will get a consistent experience across all devices.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">RESPONSIVE DESIGN ELIMINATES THE GUESSWORK</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">There's no guessing with responsive design. The website responds to any device to provide an ideal user experience. Whether your customer is using a smart phone, phablet, tablet, lap top, or desktop, you know they are going to see the site you want them to see. With other methods of mobile optimization, you are really only optimizing for a specific device. This means you have to guess which screen size your customers are going to be using. Will they get the mobile site or not? With responsive design, you don't have to worry about this, giving you more control over what your customers see.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">ONE WEBSITE TO DESIGN, BUILD, AND UPDATE</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">There's no doubt that responsive design is more complex than a traditional desktop website. However, having one responsive website requires a lot less work than having two separate websites. When you opt for a separate mobile website, you need to build two different sites. With responsive, it's all the same. This not only saves time and money in the original design stage, but it also will make life a lot easier on your development team. When you need to make a change to your website, it's all done in one place.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">BETTER FOR SEO</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">You want your website to rank well in both mobile and desktop search. With responsive design, you only have to manage and optimize one domain and one version of each page. When you opt for a separate mobile website, you are doubling the work for yourself and your marketing team. A responsive website is easier to optimize for search and for your customers because you can focus all your efforts in one place. You don't have to worry about potential duplicate content or your link equity being spread out between multiple domains.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">FUTURE-PROOF</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">Good responsive web design is a solution for today, tomorrow, and many years to come. As technology continues to change at a rapid pace, only responsive design keeps up. It meets the needs of all browsers, all devices, and all screen sizes. Other mobile-friendly options depend entirely on today's standards. If the technology changes, a mobile website can quickly become obsolete. While responsive design will certainly one day be replaced by something else, it has the most potential for longevity of anything available today.</p>
+
+                  <hr class="footer_hr">
+                  <h4 class="footer_h4">IF RESPONSIVE IS SO GREAT, WHY DON'T BIG SITES LIKE AMAZON OR EBAY USE IT?</h4>
+                  <hr class="footer_hr">
+
+                  <p class="modal_text">Even with all the positives going for responsive, there are still plenty of doubters out there. One of the most common arguments you'll hear goes something like this: But sites like Amazon and eBay don't use responsive design and they still get plenty of sales and repeat customers. While this is certainly true, there's one important distinction we must make here: you are probably not Amazon or eBay. These are mega corporations with many millions of dollars to spend on their websites and their marketing campaigns. They also have millions of loyal customers already. Unless you are in the same boat, you will probably be better off opting for responsive web design than trying to mimic these retail giants.
+
+                  When you want to reach the most customers and grow your business as much as possible, you need the best web solutions. For most businesses and budgets, responsive web design gives you everything you need and more.</p>
+                  <hr class="footer_hr">
+                <a href="https://www.firstscribe.com/6-reasons-why-responsive-design-is-the-best-solution-for-you/">Link to original article</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModalcontact" tabindex="-1" role="dialog" aria-labelledby="myModalLabelcontact">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabelcontact">Contact Info</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <img class="image_contact" src="./images/contact-250_250px_xs_.jpg" alt="Contact">
+                    </div>
+                    <div class="col-xs-6">
+                      <h6>Name: David Fernandez</h6>
+                      <h6>Location: Houston, TX</h6>
+                      <h6>Email: david05488@gmail.com</h6>
+                      <h6>Phone: 1-713-355-0303</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+      </div>
+  </body>
+</html>
