@@ -1,3 +1,4 @@
+/*This CSS code implements BEM (Block Element Modifier) syntax*/
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 
 [class*="brandico-"]:before {
@@ -5,29 +6,30 @@
 }
 
 /*Header*/
-.logo {
+.header__logo {
   width: 100px;
   height: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+/*Page hr tags*/
 hr {
   border-color: #7d97ad;
   border-top-width: 3px;
 }
 
 /*Content*/
-.image_main {
+.image__main {
   width: 100%;
 }
 
-.image {
+.article__image {
   width: 100%;
   height: 30vmin;
 }
 
-.image_contact {
+.modal__contact__image {
   width: 90px;
   height: 100px;
 }
@@ -173,7 +175,7 @@ h4 {
     font-size: 1.2em;
   }
 
-  .logo {
+  .header__logo {
     width: 150px;
     height: 150px;
   }

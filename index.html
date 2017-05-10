@@ -9,15 +9,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Portfolio Site">
     <meta name="author" content="David Fernandez">
+    <!-- Tag color red -->
+    <meta name="theme-color" content="#f44242">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) async added for performance -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js" async></script>
     <title>David Portfolio Site</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- My personal style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Tag icon CyberSolutions -->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="./images/cs_logo.png">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -28,13 +32,14 @@
         <header>
             <div class="row">
                 <div class="col-xs-6">
-                    <object class="logo" type="image/svg+xml" data="./images/logo.svg">Udacity Logo</object>
+                    <object class="header__logo" type="image/svg+xml" data="./images/logo.svg">Udacity Logo</object>
                 </div>
                 <div class="col-xs-6 text-right">
                     <h1>David Fernandez</h1>
                     <h4>Full stack web-developer</h4>
                 </div>
             </div>
+
         </header>
         <div class="row">
             <div class="col-xs-12">
@@ -46,57 +51,61 @@
                 <picture>
                     <source media="(max-width: 450px)" srcset="./images/new-york-450_450px_sm_.jpg">
                     <source media="(min-width:451px) and (max-width:992px)" srcset="./images/new-york-700_700px_md_.jpg">
-                    <img class="image_main" src="./images/new-york-1200_1200px_lg_.jpg" alt="New York">
+                    <img class="image__main" src="./images/new-york-1200_1200px_lg_.jpg" alt="New York">
                 </picture>
             </div>
         </div>
-        <section id="content">
+
+        <main>
             <div class="row">
                 <div class="col-xs-12 text-uppercase">
                     <h2>Python Featured Work</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 col">
+                <!-- recommended to use article semantic tag instead of div on each project container element -->
+                <article class="col-sm-4 col">
                     <picture>
                         <source media="(max-width: 450px)" srcset="./images/movie-trailer-450_450px_sm_.jpg">
                         <source media="(min-width:451px) and (max-width:766px)" srcset="./images/movie-trailer-700_700px_md_.jpg">
-                        <img class="image" src="./images/movie-trailer-450_450px_sm_.jpg" alt="Movie-Trailer">
+                        <img class="article__image" src="./images/movie-trailer-450_450px_sm_.jpg" alt="Movie-Trailer">
                     </picture>
                     <h3>Movie trailer website</h3>
                     <p>
                         <mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
                     <a class="link" href="https://github.com/david05488/Movie_trailer_Website">https://github.com/david05488/Movie_trailer_Website</a>
-                </div>
-                <div class="col-sm-4 col">
+                </article>
+                <article class="col-sm-4 col">
                     <picture>
                         <source media="(max-width: 450px)" srcset="./images/triangles-450_450px_sm_.jpg">
                         <source media="(min-width:451px) and (max-width:766px)" srcset="./images/triangles-700_700px_md_.jpg">
-                        <img class="image" src="./images/triangles-450_450px_sm_.jpg" alt="triangles">
+                        <img class="article__image" src="./images/triangles-450_450px_sm_.jpg" alt="triangles">
                     </picture>
                     <h3>Python triangle</h3>
                     <p>
                         <mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
                     <a class="link" href="https://github.com/david05488/Triangle_python">https://github.com/david05488/Triangle_python</a>
-                </div>
-                <div class="col-sm-4 col">
+                </article>
+                <article class="col-sm-4 col">
                     <picture>
                         <source media="(max-width: 450px)" srcset="./images/flower-450_450px_sm_.jpg">
                         <source media="(min-width:451px) and (max-width:766px)" srcset="./images/flower-700_700px_md_.jpg">
-                        <img class="image" src="./images/flower-450_450px_sm_.jpg" alt="flower">
+                        <img class="article__image" src="./images/flower-450_450px_sm_.jpg" alt="flower">
                     </picture>
                     <h3>Python flower example</h3>
                     <p>
                         <mark>Text sample</mark>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
                     <a class="link" href="https://github.com/david05488/Python_Flower">https://github.com/david05488/Python_Flower</a>
-                </div>
+                </article>
             </div>
-        </section>
+        </main>
+
         <div class="row">
             <div class="col-xs-12">
                 <hr>
             </div>
         </div>
+
         <footer class="row">
             <div class="col-xs-6">
                 <p class="footer-links foot">
@@ -106,15 +115,16 @@
                     <a data-toggle="modal" data-target="#myModalfaq" href="#">Faq</a> ·
                     <a data-toggle="modal" data-target="#myModalcontact" href="#">Contact</a>
                 </p>
-
                 <p class="foot">David Fernandez © 2017</p>
             </div>
+
             <div class="col-xs-6 text-right icon">
                 <a href="https://www.facebook.com/" class="brandico-facebook-rect f-ico"></a>
                 <a href="https://plus.google.com/" class="brandico-googleplus-rect g-ico"></a>
                 <a href="https://twitter.com/" class="brandico-twitter-bird t-ico"></a>
                 <a href="https://www.instagram.com/" class="brandico-instagram-filled i-ico"></a>
             </div>
+
             <!-- Modal -->
             <div class="modal fade" id="myModalabout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
@@ -132,6 +142,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="modal fade" id="myModalfaq" tabindex="-1" role="dialog" aria-labelledby="myModalLabelfaq">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -195,6 +206,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="modal fade" id="myModalcontact" tabindex="-1" role="dialog" aria-labelledby="myModalLabelcontact">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -205,7 +217,7 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-xs-6">
-                                    <img class="image_contact" src="./images/contact-250_250px_xs_.jpg" alt="Contact">
+                                    <img class="modal__contact__image" src="./images/contact-250_250px_xs_.jpg" alt="Contact">
                                 </div>
                                 <div class="col-xs-6">
                                     <h6>Name: David Fernandez</h6>
