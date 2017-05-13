@@ -127,7 +127,7 @@ h4 {
     font-size: 18px;
   }
 
-  .image {
+  .article__image {
     height: 50vmin;
   }
 
@@ -153,7 +153,7 @@ h4 {
     font-size: 20px;
   }
 
-  .image {
+  .article__image {
     height: 60vmin;
   }
 
@@ -167,7 +167,7 @@ h4 {
 }
 
 @media screen and (min-width:767px) and (max-width:992px) {
-  .image {
+  .article__image {
     height: 23vmin;
   }
 
